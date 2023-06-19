@@ -1,0 +1,15 @@
+pluginManagement {
+    repositories {
+        maven {
+            url nexusUrl
+            credentials {
+                username nexusUser
+                password nexusPassword
+            }
+            allowInsecureProtocol = true
+        }
+        gradlePluginPortal()
+    }
+}
+
+rootProject.name = 'leetcode'

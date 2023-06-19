@@ -1,19 +1,12 @@
 plugins {
-    id 'java'
+    id "ladyka-gradle-bundle-java-17-starter" version "${ladykaGradleBundleVersion}"
 }
 
-group 'by.ladyka.leetcode'
-version '2023-06-18'
-
-repositories {
-    mavenCentral()
-}
+group = 'by.ladyka'
+version = gitVersion()
+sourceCompatibility = JavaVersion.VERSION_17
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
-}
-
-test {
-    useJUnitPlatform()
+    testImplementation 'org.junit.jupiter:junit-jupiter-api'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
 }
