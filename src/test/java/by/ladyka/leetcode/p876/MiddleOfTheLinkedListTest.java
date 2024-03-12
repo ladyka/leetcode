@@ -1,7 +1,10 @@
 package by.ladyka.leetcode.p876;
 
-import org.junit.jupiter.api.Assertions;
+import by.ladyka.leetcode.common.ListNode;
 import org.junit.jupiter.api.Test;
+
+import static by.ladyka.leetcode.common.ListNodeAssertions.assertListNodes;
+
 
 class MiddleOfTheLinkedListTest {
 
@@ -24,13 +27,5 @@ class MiddleOfTheLinkedListTest {
         ListNode result = solution.middleNode(ListNode.of(new int[]{1}));
         ListNode expected = ListNode.of(new int[]{1});
         assertListNodes(expected, result);
-    }
-
-    private static void assertListNodes(ListNode expected, ListNode result) {
-        do {
-            Assertions.assertEquals(expected.val, result.val);
-            result = result.next;
-            expected = expected.next;
-        } while (result != null);
     }
 }
