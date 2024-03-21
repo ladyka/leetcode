@@ -1,5 +1,7 @@
 package by.ladyka.leetcode.p19;
 
+import by.ladyka.leetcode.common.ListNode;
+
 import java.util.ArrayList;
 import java.util.List;
 

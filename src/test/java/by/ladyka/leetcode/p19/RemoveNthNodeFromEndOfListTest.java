@@ -1,5 +1,6 @@
 package by.ladyka.leetcode.p19;
 
+import by.ladyka.leetcode.common.ListNode;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
